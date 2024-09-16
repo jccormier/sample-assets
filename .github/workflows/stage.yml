@@ -1,0 +1,17 @@
+name: 'Trigger deployment to staging'
+
+on:
+  workflow_call:
+
+jobs:
+  trigger-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
+    steps:
+      - name: Mock staging deployment
+        run: |
+          echo "Mock staging deployment executing..."
+            
