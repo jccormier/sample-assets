@@ -3,7 +3,7 @@ workflows:
     path: jccormier/cloudfront-staging/.github/workflows/stage.yaml@main
 
   test:
-    path: BeyondTrust/staged-poc-sample-tests/blob/main/.github/workflows/trigger-tests.yml@main
+    path: BeyondTrust/staged-poc-sample-tests/.github/workflows/trigger-tests.yml@main
 
   posttest:
     path: jccormier/cloudfront-staging/.github/workflows/promote.yaml@main
