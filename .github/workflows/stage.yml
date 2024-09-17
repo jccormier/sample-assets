@@ -19,5 +19,4 @@ jobs:
       - name: Mock staging deployment
         run: |
           echo "Mock staging deployment executing..."
-          exit 1
             
