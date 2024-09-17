@@ -1,9 +1,8 @@
-workflows:
-  pretest:
-    path: jccormier/sample-assets/.github/workflows/stage.yaml@main
+pretest:
+  workflow: jccormier/sample-assets/.github/workflows/stage.yaml@main
 
-  test:
-    path: jccormier/sample-assets/.github/workflows/test.yml@main
+test:
+  workflow: jccormier/sample-assets/.github/workflows/test.yml@main
 
-  posttest:
-    path: jccormier/sample-assets/.github/workflows/promote.yaml@main
+posttest:
+  workflow: jccormier/sample-assets/.github/workflows/promote.yaml@main
