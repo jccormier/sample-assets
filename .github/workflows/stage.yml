@@ -1,8 +1,13 @@
 name: 'Trigger deployment to staging'
+run-name: Staging ${{ inputs.UUID }}
 
 on:
   workflow_dispatch:
-
+    inputs:
+      UUID:
+        description: 'Distinct ID'
+        required: false
+        
 jobs:
   trigger-tests:
     runs-on: ubuntu-latest
