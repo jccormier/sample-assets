@@ -1,11 +1,11 @@
 name: 'Trigger deployment to staging'
-run-name: Staging ${{ inputs.UUID }}
+run-name: ${{ inputs.run_name }}
 
 on:
   workflow_dispatch:
     inputs:
-      UUID:
-        description: 'Distinct ID'
+      run_name:
+        description: 'Workflow Run Name'
         required: false
         
 jobs:
