@@ -1,11 +1,11 @@
 pretest:
-  pipeline: stage-to-s3
+  pipeline: [stage-to-s3]
   workflow: jccormier/sample-assets/.github/workflows/stage.yaml@main
 
 test:
-  pipeline: execute-tests
+  pipeline: [execute-tests]
   workflow: jccormier/sample-assets/.github/workflows/test.yml@main
 
 posttest:
-  pipeline: report-to-console
+  pipeline: [report-to-console]
   workflow: jccormier/sample-assets/.github/workflows/promote.yaml@main
