@@ -19,4 +19,5 @@ jobs:
       - name: Mock test run
         run: |
           echo "Mock test run executing..."
+          exit 1
             
