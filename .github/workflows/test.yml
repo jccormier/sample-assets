@@ -1,7 +1,12 @@
 name: 'Trigger tests execution'
+run-name: Testing ${{ inputs.UUID }}
 
 on:
   workflow_dispatch:
+    inputs:
+      UUID:
+        description: 'Distinct ID'
+        required: false
 
 jobs:
   trigger-tests:
