@@ -1,8 +1,8 @@
 pretest:
-  workflow: jccormier/sample-assets/.github/workflows/stage.yaml@main
+  pipeline: jccormier/sample-assets/.github/workflows/stage.yaml@main
 
 test:
-  workflow: jccormier/sample-assets/.github/workflows/test.yml@main
+  pipeline: jccormier/sample-assets/.github/workflows/test.yml@main
 
 posttest:
-  workflow: jccormier/sample-assets/.github/workflows/promote.yaml@main
+  pipeline: jccormier/sample-assets/.github/workflows/promote.yaml@main
