@@ -1,4 +1,4 @@
-pipelines:
+pipeline:
   - name: execute-workflow
     workflow: jccormier/sample-assets/.github/workflows/test.yml@main
     description: Trigger test execution
