@@ -1,9 +1,3 @@
 pipelines:
-  - name: Stage to S3
-    pipeline: stage-to-s3
-
-  - name: Execute Tests
-    pipeline: execute-tests
-
-  - name: Report to Console
-    pipeline: report-to-console
+  - name: execute-workflow
+    workflow: jccormier/sample-assets/.github/workflows/test.yml 
