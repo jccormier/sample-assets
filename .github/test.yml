@@ -3,4 +3,4 @@ pipeline:
     workflow: jccormier/sample-assets/.github/workflows/test.yml@main
     description: Trigger test execution
     inputs:
-      - test_suite: Smoke Tests
+      test_suite: Smoke Tests
