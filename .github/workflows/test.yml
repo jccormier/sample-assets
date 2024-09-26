@@ -1,12 +1,11 @@
-name: 'Trigger tests execution'
-run-name: ${{ inputs.run_name }}
+name: 'Trigger Test Execution'
 
 on:
   workflow_dispatch:
     inputs:
-      run_name:
-        description: 'Workflow Run Name'
-        required: false
+      test_suite:
+        description: 'Test Suite'
+        required: true
 
 jobs:
   trigger-tests:
@@ -18,5 +17,5 @@ jobs:
     steps:
       - name: Mock test run
         run: |
-          echo "Mock test run executing..."
+          echo "Mock test run executing ... ${{ github.event.inputs.test_suite }}"
             
