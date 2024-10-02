@@ -15,7 +15,12 @@ jobs:
       security-events: write
       actions: read
     steps:
-      - name: Mock test run
+      - name: Test Run
         run: |
-          echo "Mock test run executing ... ${{ github.event.inputs.test_suite }}"
-            
+          echo "Mock test run executing ... ${{ github.event.inputs.test_suite }}" > test_results.txt    
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: test_results.txt
+          retention-days: 5
