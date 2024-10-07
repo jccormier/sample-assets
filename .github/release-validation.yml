@@ -1,5 +1,5 @@
 pipeline:
   - name: execute-workflow
-    workflow: jccormier/staged-poc-sample-tests/.github/workflows/trigger-tests.yml@main
+    workflow: BeyondTrust/staged-poc-sample-tests/.github/workflows/trigger-tests.yml@main
     description: Trigger test execution
     
