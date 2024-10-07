@@ -1,6 +1,6 @@
 pipeline:
   - name: execute-workflow
-    workflow: jccormier/sample-assets/.github/workflows/test.yml@main
+    workflow: BeyondTrust/staged-poc-sample-tests/.github/workflows/trigger-tests.yml@main
     description: Trigger test execution
     inputs:
       test_suite: Smoke Tests
