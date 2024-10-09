@@ -2,10 +2,6 @@ name: 'Trigger Test Execution'
 
 on:
   workflow_dispatch:
-    inputs:
-      test_suite:
-        description: 'Test Suite'
-        required: true
 
 jobs:
   trigger-tests:
@@ -17,7 +13,7 @@ jobs:
     steps:
       - name: Test Run
         run: |
-          echo "Mock test run executing ... ${{ github.event.inputs.test_suite }}" > test_results.txt    
+          echo "Mock test run executing ... Smoke Tests" > test_results.txt    
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
