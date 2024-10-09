@@ -1,5 +1,5 @@
 pipeline:
   - name: execute-workflow
-    workflow: BeyondTrust/platform-integration-tests/.github/workflows/dummy-test.yml@main
+    workflow: jccormier/sample-assets/.github/workflows/test.yml@main
     description: Trigger test execution
     
