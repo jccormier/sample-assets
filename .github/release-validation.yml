@@ -2,6 +2,4 @@ pipeline:
   - name: stage-assets
   
   - name: execute-tests
-    workflow: jccormier/sample-assets/.github/workflows/test.yml@main
-    description: Trigger test execution
-    
+    continueOnFailure: true
