@@ -1,5 +1,6 @@
 pipeline:
   - name: stage-assets
-  
-  - name: execute-tests
-    continueOnFailure: true
+    inputs:
+      sourcePath: eng-generic-qa-local/beyondtrust/platform/release-validation-app-lambda
+      destinationType: staging
+      destinationFolder: lambda
